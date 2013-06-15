@@ -1,0 +1,50 @@
+<exporter version="1.0">
+    <!-- identifier of the exporter -->
+    <name>multi-scss</name>
+
+    <!-- display name of the exporter for the combo box -->
+    <displayName>Multi-SCSS</displayName>
+
+    <!-- description of the exporter -->
+	<description>SCSS exporter that lets you have a site with multiple sprite sheets</description>
+
+    <!-- exporter version -->
+    <version>1.0</version>
+
+    <!-- currently only one file allowed - more to come with update -->
+    <files>
+        <file>
+            <!-- name of this file variable -->
+            <name>scss</name>
+
+            <!-- human readable name (for GUI) -->
+            <displayName>SCSS for multiple sprites</displayName>
+
+            <!-- file extension for the file -->
+            <fileExtension>scss</fileExtension>
+
+            <!-- name of the template file -->
+            <template>multi-scss.scss</template>
+        </file>
+    </files>
+
+    <!-- target framework supports trimming -->
+    <supportsTrimming>true</supportsTrimming>
+
+    <!-- target framework supports rotated sprites -->
+    <supportsRotation>false</supportsRotation>
+
+    <!-- rotated sprites direction (cw/ccw) -->
+    <rotationDirection>cw</rotationDirection>
+
+    <!-- supports npot sizes -->
+    <supportsNPOT>true</supportsNPOT>
+
+    <!-- supports file name stripping (remove .png etc) -->
+    <supportsTrimSpriteNames>yes</supportsTrimSpriteNames>
+
+    <!-- supports texure subpath -->
+    <supportsTextureSubPath>no</supportsTextureSubPath>
+
+</exporter>
+
