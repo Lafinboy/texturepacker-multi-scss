@@ -44,7 +44,7 @@
     <supportsTrimSpriteNames>yes</supportsTrimSpriteNames>
 
     <!-- supports texure subpath -->
-    <supportsTextureSubPath>no</supportsTextureSubPath>
+    <supportsTextureSubPath>yes</supportsTextureSubPath>
 
 </exporter>
 
