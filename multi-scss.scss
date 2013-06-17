@@ -4,6 +4,7 @@
  * SmartUpdateHash: {{smartUpdateKey}}
  */
 {% load makepseudocssselector %}
-.{{ texture.trimmedName }} {display:inline-block; overflow:hidden; background-repeat:no-repeat; background-image:url('{{ texture.fullName }}'); }
+${{ texture.trimmedName }}-image-path: "../img/" !default;
+%{{ texture.trimmedName }} {display:inline-block; overflow:hidden; background-repeat:no-repeat; background-image:url('#{${{ texture.trimmedName }}-image-path}{{ texture.fullName }}'); }
 {% for sprite in sprites %}
-.{{sprite.trimmedName|makepseudocssselector}} { @extend .{{ texture.trimmedName }}; width:{{ sprite.frameRect.width }}px; height:{{ sprite.frameRect.height }}px; background-position: -{{ sprite.frameRect.x }}px -{{ sprite.frameRect.y }}px; }{% endfor %}
+.{{ texture.trimmedName }}-{{sprite.trimmedName|makepseudocssselector}} { @extend %{{ texture.trimmedName }}; width:{{ sprite.frameRect.width }}px; height:{{ sprite.frameRect.height }}px; background-position: -{{ sprite.frameRect.x }}px -{{ sprite.frameRect.y }}px; }{% endfor %}
